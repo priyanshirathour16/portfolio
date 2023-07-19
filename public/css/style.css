@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+
+*{
+    color:white;
+    font-family: 'Akaya Telivigala', cursive;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+}
+html{
+    
+    scroll-behavior: smooth;
+}
+.name{
+    color:rgb(212, 110, 127);
+}
+.btn-1{
+    background-color:rgb(212, 110, 127); ;
+}
+
+.women-img{
+    margin-top: 25px;
+    width: 70%;
+    /* filter: drop-shadow(0  0.5rem 1rem rgba(125, 121, 121, 0.5) ); */
+    /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
+    
+}
+.rotation-class {
+    animation: rotate-animation 1.5s ease-out forwards;
+    animation-iteration-count: 2;
+
+}
+@keyframes rotate-animation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}  
+/* .women-img:hover{
+    transform: scale(1.1);
+} */
+.hero-text1{
+    text-align: center;
+}
+.about-style{
+    padding-top: 20px;
+}
+.scale-img{
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+.fa-hand{
+    color: rgb(255, 196, 0);
+    /* background-color: yellow; */
+}
+.setting{
+    text-align: center;
+
+}
+.our-servecies{
+margin-top: 75px;
+padding-bottom: 30px;
+border-radius: 10px;
+
+transition: all 0.4s ease-in-out;
+box-shadow: 0 0 25px 0 rgba(254, 254, 255, 0.17);
+}
+.box{
+    position: relative;
+
+}
+.our-servecies .icon{
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.our-servecies:hover h4 ,
+.our-servecies:hover h4 {
+    color:#fff;  
+}
+.setting:hover{
+    box-shadow:  0 0 25px 0 rgba(254, 254, 255, 0.17);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg , #49d0da 0% , #210c59 50%);
+}
+.service-style{
+    margin-bottom: 30px;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.carousel-item img{
+   width: 100%;
+}
+.form-group{
+    padding: 10px;
+}
+.footer-section{
+    width: 100%;
+    padding: 5%;
+    background-color:rgb(212, 110, 127); ;
+    margin-top: 20px;
+    color:black;
+}
+.fa-heart{
+    color:red;
+}
+.footer-section :last-child:hover{
+     color: white;
+}
+.my-project{
+    padding-top: 10%;
+}
+span .fa-hand-point-right{
+    color: rgb(255, 196, 0);
+    visibility: visible;
+}
+span .fa-hand-point-down{
+   visibility: hidden;
+    color: rgb(255, 196, 0);
+}
+.icon img{
+    /* width: 30%;
+    border-radius: 70%; */
+    width:100px;
+    border-radius: 250px;
+    height: 100px;
+}
+@media(max-width:600px){
+    .my-project{
+        padding-top: 0;
+    }
+    span .fa-hand-point-down{
+       visibility: visible;
+    }
+    span .fa-hand-point-right{
+        visibility: hidden;
+        color: rgb(255, 196, 0);
+    }
+}
+
